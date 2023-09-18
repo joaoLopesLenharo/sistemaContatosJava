@@ -19,14 +19,6 @@ CREATE TABLE contatos (
     PRIMARY KEY (id)
 );
 
--- SQL Injection
-/*
-INSERT INTO contatos (nome, email, endereco) VALUES (
-	'Lucas Matheus',
-    'lucasmgsilva@hotmail.com',
-    'Rua Albino Presotto'); TRUNCATE TABLE contatos;-- ');
-*/
-
 -- Criação da tabela usuarios
 CREATE TABLE usuarios (
 	id BIGINT NOT NULL AUTO_INCREMENT,
