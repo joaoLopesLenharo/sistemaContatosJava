@@ -1,0 +1,39 @@
+-- Criação Banco de Dados sistema
+CREATE DATABASE sistema;
+
+-- DROP DATABASE sistema;
+-- Usar o Banco de Dados
+USE sistema;
+
+-- Criação da tabela contatos
+CREATE TABLE contatos (
+	id BIGINT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    email VARCHAR(255),
+    rua VARCHAR(255) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    numCasa VARCHAR(30) NOT NULL,
+    bairro VARCHAR(255) NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    telefone int not null,
+    PRIMARY KEY (id)
+);
+
+-- SQL Injection
+/*
+INSERT INTO contatos (nome, email, endereco) VALUES (
+	'Lucas Matheus',
+    'lucasmgsilva@hotmail.com',
+    'Rua Albino Presotto'); TRUNCATE TABLE contatos;-- ');
+*/
+
+-- Criação da tabela usuarios
+CREATE TABLE usuarios (
+	id BIGINT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(255) NOT NULL,
+    usuario VARCHAR(25) NOT NULL,
+    senha VARCHAR(25) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+insert into usuarios (nome, senha, usuario) VALUes ("a", "a", "a");
